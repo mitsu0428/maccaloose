@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as Button from "../ui/Button";
+import * as Button from "@/components/ui/Button";
 
 export const Compoents = () => {
   return (

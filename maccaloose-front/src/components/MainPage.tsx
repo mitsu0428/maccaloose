@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import * as Header from "./Layout/HeaderComponent";
-import * as Footer from "./Layout/FooterComponent";
-import * as MainVisual from "./features/MainVisual";
+import * as Header from "@/components/Layout/HeaderComponent";
+import * as Footer from "@/components/Layout/FooterComponent";
+import * as MainTop from "@/components/features/main/top";
 
 export const Compoents = () => {
   return (
     <StyledMain>
       <Header.Compoents />
-      <MainVisual.Compoents />
+      <MainTop.Compoents />
       <Footer.Compoents />
     </StyledMain>
   );

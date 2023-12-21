@@ -1,5 +1,5 @@
-import * as Main from "@/components/Main";
+import * as MainPage from "@/components/MainPage";
 
 export default function Home() {
-  return <Main.Compoents />;
+  return <MainPage.Compoents />;
 }
