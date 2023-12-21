@@ -1,9 +1,5 @@
+import * as Main from "@/features/Main";
+
 export default function Home() {
-  return (
-    <>
-      <main>
-        <h1>Hello, world!</h1>
-      </main>
-    </>
-  );
+  return <Main.Compoents />;
 }
