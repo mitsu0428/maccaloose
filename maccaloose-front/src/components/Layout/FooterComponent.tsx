@@ -21,5 +21,4 @@ const FooterMenu = styled.footer`
   left: 0;
   padding: 0 1rem 1rem 1rem;
   background-color: #fff;
-  z-index: 999;
 `;

@@ -21,5 +21,4 @@ const HeaderMenu = styled.header`
   left: 0;
   padding: 1rem 1rem 0 1rem;
   background-color: #fff;
-  z-index: 999;
 `;
