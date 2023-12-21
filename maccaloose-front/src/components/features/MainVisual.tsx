@@ -7,8 +7,8 @@ export const Compoents = () => {
     <Wrapper>
       <Button.Component
         key="1"
-        buttonText="button"
-        onClick={() => console.log("button")}
+        buttonText="マカロンを購入する"
+        onClick={() => {}}
       />
     </Wrapper>
   );
