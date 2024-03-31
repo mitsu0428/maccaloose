@@ -2,5 +2,5 @@
 
 ### ディレクトリ構成
 
-- front
-- app
+- maccaloose-front
+- maccaloose-app
