@@ -15,10 +15,7 @@ export const Component = () => {
 
       <Wrapper>
         <RightWrapper>
-          <StyledImage
-            src="/maccaloose-web-24.jpg"
-            alt="店舗の画像"
-          />
+          <p>店舗イラストが入る</p>
         </RightWrapper>
 
         <LeftWrapper>
