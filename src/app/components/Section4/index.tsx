@@ -9,7 +9,7 @@ export const Component = () => {
     <Container>
       <WrapperRow>
         <VerticalText>
-          <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+          <EmphasizedText className={Font.Font.CustomShippori.className}>
             商品紹介
           </EmphasizedText>
         </VerticalText>
@@ -17,7 +17,7 @@ export const Component = () => {
           textPosition="right"
           marginLeftSize="25px"
         >
-          <SmallText className={Font.Font.CustomGotchicA1.className}>
+          <SmallText className={Font.Font.CustomShippori.className}>
             line up
           </SmallText>
         </LineWithText.Component>
@@ -25,7 +25,7 @@ export const Component = () => {
 
       <WrapperColumn>
         <EmphasizedTextMarginLeftUp
-          className={Font.Font.CustomGotchicA1.className}
+          className={Font.Font.CustomShippori.className}
         >
           地域のおいしさ、あなたのひとつまみ。
         </EmphasizedTextMarginLeftUp>

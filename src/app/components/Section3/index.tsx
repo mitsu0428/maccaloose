@@ -17,10 +17,10 @@ export const Component = () => {
 
       <RightWrapper>
         <WrapperColumn>
-          <EmphasizedTextRight className={Font.Font.CustomGotchicA1.className}>
+          <EmphasizedTextRight className={Font.Font.CustomShippori.className}>
             心を豊かにする、
           </EmphasizedTextRight>
-          <EmphasizedTextRight className={Font.Font.CustomGotchicA1.className}>
+          <EmphasizedTextRight className={Font.Font.CustomShippori.className}>
             四季の洗練されたフレーバー。
           </EmphasizedTextRight>
         </WrapperColumn>
@@ -30,47 +30,47 @@ export const Component = () => {
             textPosition="right"
             marginLeftSize="50px"
           >
-            <SmallText className={Font.Font.CustomGotchicA1.className}>
+            <SmallText className={Font.Font.CustomShippori.className}>
               introduction
             </SmallText>
           </LineWithText.Component>
         </WrapperColumn>
 
         <WrapperColumn>
-          <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+          <EmphasizedText className={Font.Font.CustomShippori.className}>
             四季の洗練された味わい、
           </EmphasizedText>
-          <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+          <EmphasizedText className={Font.Font.CustomShippori.className}>
             特別な時。
           </EmphasizedText>
         </WrapperColumn>
 
         <WrapperColumnPC>
-          <Description className={Font.Font.CustomGotchicA1.className}>
+          <Description className={Font.Font.CustomShippori.className}>
             シーズンごとに入れ替わる新鮮かつ繊細なフレーバー。
           </Description>
-          <Description className={Font.Font.CustomGotchicA1.className}>
+          <Description className={Font.Font.CustomShippori.className}>
             常に新しい味を探し、旬の素材のおいしさを磨き上げ、
           </Description>
-          <Description className={Font.Font.CustomGotchicA1.className}>
+          <Description className={Font.Font.CustomShippori.className}>
             あなたの手元で輝きます。
           </Description>
         </WrapperColumnPC>
 
         <WrapperColumnSP>
-          <Description className={Font.Font.CustomGotchicA1.className}>
+          <Description className={Font.Font.CustomShippori.className}>
             シーズンごとに入れ替わる
           </Description>
-          <Description className={Font.Font.CustomGotchicA1.className}>
+          <Description className={Font.Font.CustomShippori.className}>
             新鮮かつ繊細なフレーバー。
           </Description>
-          <Description className={Font.Font.CustomGotchicA1.className}>
+          <Description className={Font.Font.CustomShippori.className}>
             常に新しい味を探し、
           </Description>
-          <Description className={Font.Font.CustomGotchicA1.className}>
+          <Description className={Font.Font.CustomShippori.className}>
             旬の素材のおいしさを磨き上げ、
           </Description>
-          <Description className={Font.Font.CustomGotchicA1.className}>
+          <Description className={Font.Font.CustomShippori.className}>
             あなたの手元で輝きます。
           </Description>
         </WrapperColumnSP>

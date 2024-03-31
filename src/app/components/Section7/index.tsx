@@ -8,14 +8,14 @@ export const Component = () => {
   return (
     <Container>
       <LineWithText.Component bottomLineLong={true}>
-        <SmallText className={Font.Font.CustomGotchicA1.className}>
+        <SmallText className={Font.Font.CustomShippori.className}>
           shop
         </SmallText>
       </LineWithText.Component>
 
       <Wrapper>
         <RightWrapper>
-          <img
+          <StyledImage
             src="/maccaloose-web-24.jpg"
             alt="店舗の画像"
           />
@@ -23,14 +23,16 @@ export const Component = () => {
 
         <LeftWrapper>
           <Vertical>
-            <VerticalText>店舗紹介</VerticalText>
+            <VerticalText className={Font.Font.CustomShippori.className}>
+              店舗紹介
+            </VerticalText>
           </Vertical>
 
           <WrapperColumn>
-            <Text className={Font.Font.CustomGotchicA1.className}>
+            <Text className={Font.Font.CustomShippori.className}>
               〒239-0844
             </Text>
-            <Text className={Font.Font.CustomGotchicA1.className}>
+            <Text className={Font.Font.CustomShippori.className}>
               神奈川県横須賀市岩戸4丁目 大矢部ホームストアー5号室
             </Text>
           </WrapperColumn>
@@ -134,4 +136,8 @@ const VerticalText = styled.p`
   @media (max-width: 768px) {
     font-size: 15px;
   }
+`;
+
+const StyledImage = styled.img`
+  width: 100%;
 `;

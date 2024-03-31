@@ -17,33 +17,35 @@ export const Component = () => {
         </ImageWrapper>
 
         <Vertical>
-          <VerticalText className={Font.Font.CustomGotchicA1.className}>
+          <VerticalText className={Font.Font.CustomShippori.className}>
             ほどよい甘さが口溶ける
           </VerticalText>
-          <VerticalText>恵みのスイートモーメント</VerticalText>
+          <VerticalText className={Font.Font.CustomShippori.className}>
+            恵みのスイートモーメント
+          </VerticalText>
         </Vertical>
       </WrapperRowWithMarginRight>
 
       <WrapperColumnWithMarginTop>
-        <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+        <EmphasizedText className={Font.Font.CustomShippori.className}>
           こだわったのは
         </EmphasizedText>
-        <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+        <EmphasizedText className={Font.Font.CustomShippori.className}>
           甘さを抑えた、自然な風味
         </EmphasizedText>
       </WrapperColumnWithMarginTop>
 
       <WrapperColumnWithMarginTop>
-        <Description className={Font.Font.CustomGotchicA1.className}>
+        <Description className={Font.Font.CustomShippori.className}>
           マカルースは砂糖の使用量を
         </Description>
-        <Description className={Font.Font.CustomGotchicA1.className}>
+        <Description className={Font.Font.CustomShippori.className}>
           従来の3分の1に抑え、
         </Description>
-        <Description className={Font.Font.CustomGotchicA1.className}>
+        <Description className={Font.Font.CustomShippori.className}>
           野菜の甘味を生かした
         </Description>
-        <Description className={Font.Font.CustomGotchicA1.className}>
+        <Description className={Font.Font.CustomShippori.className}>
           優しい味わいのマカロンです。
         </Description>
       </WrapperColumnWithMarginTop>
