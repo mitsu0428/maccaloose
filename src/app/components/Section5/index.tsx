@@ -2,12 +2,17 @@
 
 import React from "react";
 import styled from "styled-components";
+import * as Font from "../../styles/NextFont";
 
 export const Component = () => {
   return (
     <Container id="menu">
-      <Text>マカロンの贈り言葉は、「大切なあなたに」</Text>
-      <EmphasizedText>「特別なあなたへ、心からの思いを込めて」</EmphasizedText>
+      <Text className={Font.Font.CustomGotchicA1.className}>
+        マカロンの贈り言葉は、”大切なあなたに”
+      </Text>
+      <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+        「特別なあなたへ、心からの思いを込めて」
+      </EmphasizedText>
 
       <ImageWrapper>
         <StyledImage

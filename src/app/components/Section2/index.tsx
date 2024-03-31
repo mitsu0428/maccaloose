@@ -17,21 +17,35 @@ export const Component = () => {
         </ImageWrapper>
 
         <Vertical>
+          <VerticalText className={Font.Font.CustomGotchicA1.className}>
+            ほどよい甘さが口溶ける
+          </VerticalText>
           <VerticalText>恵みのスイートモーメント</VerticalText>
-          <VerticalText>ほどよい甘さが口溶ける</VerticalText>
         </Vertical>
       </WrapperRowWithMarginRight>
 
       <WrapperColumnWithMarginTop>
-        <EmphasizedText>こだわったのは</EmphasizedText>
-        <EmphasizedText>甘さを抑えた、自然な風味</EmphasizedText>
+        <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+          こだわったのは
+        </EmphasizedText>
+        <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+          甘さを抑えた、自然な風味
+        </EmphasizedText>
       </WrapperColumnWithMarginTop>
 
       <WrapperColumnWithMarginTop>
-        <Description>マカルースは砂糖の使用量を</Description>
-        <Description>従来の3分の1に抑え、</Description>
-        <Description>野菜の甘味を生かした</Description>
-        <Description>優しい味わいのマカロンです。</Description>
+        <Description className={Font.Font.CustomGotchicA1.className}>
+          マカルースは砂糖の使用量を
+        </Description>
+        <Description className={Font.Font.CustomGotchicA1.className}>
+          従来の3分の1に抑え、
+        </Description>
+        <Description className={Font.Font.CustomGotchicA1.className}>
+          野菜の甘味を生かした
+        </Description>
+        <Description className={Font.Font.CustomGotchicA1.className}>
+          優しい味わいのマカロンです。
+        </Description>
       </WrapperColumnWithMarginTop>
     </Container>
   );
@@ -63,34 +77,29 @@ const WrapperColumnWithMarginTop = styled.div`
   padding-left: 50px;
 
   @media (max-width: 768px) {
-    margin-top: 10px;
-    padding-left: 10px;
+    margin-top: 25px;
+    padding-left: 25px;
   }
 `;
 
 const Vertical = styled.div`
   writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-top: 32px;
+  margin-top: 100px;
 
-  &:nth-child(1) {
-    margin-right: 24px;
-
-    @media (max-width: 768px) {
-      margin-right: 12px;
-    }
-  }
   &:nth-child(2) {
-    margin-right: 180px;
+    margin-right: 200px;
+    margin-left: 50px;
 
     @media (max-width: 768px) {
-      margin-right: 50px;
+      margin-right: 25px;
+      margin-left: 25px;
     }
   }
 `;
 
 const VerticalText = styled.p`
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -98,12 +107,12 @@ const VerticalText = styled.p`
   letter-spacing: 0.5em;
 
   @media (max-width: 768px) {
-    font-size: 12px;
+    font-size: 15px;
   }
 `;
 
 const EmphasizedText = styled.p`
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin: 0 0 0 50px;
   padding: 0;
@@ -111,7 +120,8 @@ const EmphasizedText = styled.p`
   letter-spacing: 0.5em;
 
   @media (max-width: 768px) {
-    font-size: 12px;
+    margin: 0;
+    font-size: 15px;
   }
 `;
 
@@ -124,6 +134,7 @@ const Description = styled.p`
   line-height: 2;
 
   @media (max-width: 768px) {
+    margin: 0;
     font-size: 12px;
   }
 `;
@@ -133,11 +144,13 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-left: 100px;
 
   @media (max-width: 768px) {
     width: 100%;
     margin-top: 25px;
+    margin-left: 25px;
   }
 `;
 

@@ -2,7 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
-
+import * as Font from "../../styles/NextFont";
 import * as LineWithText from "@/app/components/Design/LineWithText";
 
 export const Component = () => {
@@ -17,8 +17,10 @@ export const Component = () => {
 
       <RightWrapper>
         <WrapperColumn>
-          <EmphasizedTextRight>心を豊かにする、</EmphasizedTextRight>
-          <EmphasizedTextRight>
+          <EmphasizedTextRight className={Font.Font.CustomGotchicA1.className}>
+            心を豊かにする、
+          </EmphasizedTextRight>
+          <EmphasizedTextRight className={Font.Font.CustomGotchicA1.className}>
             四季の洗練されたフレーバー。
           </EmphasizedTextRight>
         </WrapperColumn>
@@ -28,24 +30,50 @@ export const Component = () => {
             textPosition="right"
             marginLeftSize="50px"
           >
-            <SmallText>introduction</SmallText>
+            <SmallText className={Font.Font.CustomGotchicA1.className}>
+              introduction
+            </SmallText>
           </LineWithText.Component>
         </WrapperColumn>
 
         <WrapperColumn>
-          <EmphasizedText>四季の洗練された味わい、</EmphasizedText>
-          <EmphasizedText>特別な時。</EmphasizedText>
+          <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+            四季の洗練された味わい、
+          </EmphasizedText>
+          <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+            特別な時。
+          </EmphasizedText>
         </WrapperColumn>
 
-        <WrapperColumn>
-          <Description>
+        <WrapperColumnPC>
+          <Description className={Font.Font.CustomGotchicA1.className}>
             シーズンごとに入れ替わる新鮮かつ繊細なフレーバー。
           </Description>
-          <Description>
+          <Description className={Font.Font.CustomGotchicA1.className}>
             常に新しい味を探し、旬の素材のおいしさを磨き上げ、
           </Description>
-          <Description>あなたの手元で輝きます。</Description>
-        </WrapperColumn>
+          <Description className={Font.Font.CustomGotchicA1.className}>
+            あなたの手元で輝きます。
+          </Description>
+        </WrapperColumnPC>
+
+        <WrapperColumnSP>
+          <Description className={Font.Font.CustomGotchicA1.className}>
+            シーズンごとに入れ替わる
+          </Description>
+          <Description className={Font.Font.CustomGotchicA1.className}>
+            新鮮かつ繊細なフレーバー。
+          </Description>
+          <Description className={Font.Font.CustomGotchicA1.className}>
+            常に新しい味を探し、
+          </Description>
+          <Description className={Font.Font.CustomGotchicA1.className}>
+            旬の素材のおいしさを磨き上げ、
+          </Description>
+          <Description className={Font.Font.CustomGotchicA1.className}>
+            あなたの手元で輝きます。
+          </Description>
+        </WrapperColumnSP>
       </RightWrapper>
     </Container>
   );
@@ -97,13 +125,36 @@ const WrapperColumn = styled.div`
   overflow: hidden;
 
   @media (max-width: 768px) {
-    justify-content: left;
+    align-items: center;
+  }
+`;
+
+const WrapperColumnPC = styled.div`
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  padding: 20px 0;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const WrapperColumnSP = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
     align-items: center;
   }
 `;
 
 const EmphasizedTextRight = styled.p`
-  font-size: 24px;
+  width: 100%;
+  font-size: 30px;
   font-weight: bold;
   margin: 0 50px 0 0;
   padding: 0;
@@ -111,11 +162,13 @@ const EmphasizedTextRight = styled.p`
   letter-spacing: 0.5em;
 
   @media (max-width: 768px) {
-    font-size: 12px;
+    margin: 0 25px 0 0;
+    font-size: 15px;
   }
 `;
 
 const EmphasizedText = styled.p`
+  width: 100%;
   font-size: 24px;
   font-weight: bold;
   margin: 0 0 0 50px;
@@ -137,6 +190,7 @@ const Description = styled.p`
   line-height: 2;
 
   @media (max-width: 768px) {
+    margin: 0 0 0 25px;
     font-size: 12px;
   }
 `;

@@ -38,9 +38,9 @@ const Wrapper = styled.div<{ $marginLeftSize?: string }>`
   justify-content: left;
   flex-direction: row;
   gap: 20px;
-  margin-left: ${(props) => props.$marginLeftSize || "0"};
+  margin-left: ${(props) => props.$marginLeftSize};
   @media (max-width: 768px) {
-    margin-left: ${(props) => Number(props.$marginLeftSize) / 2 || "0"};
+    margin-left: ${(props) => Number(props.$marginLeftSize)};
     gap: 10px;
   }
 `;

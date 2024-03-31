@@ -2,25 +2,31 @@
 
 import React from "react";
 import styled from "styled-components";
-
+import * as Font from "../../styles/NextFont";
 import * as LineWithText from "@/app/components/Design/LineWithText";
 export const Component = () => {
   return (
     <Container>
       <WrapperRow>
         <VerticalText>
-          <EmphasizedText>商品紹介</EmphasizedText>
+          <EmphasizedText className={Font.Font.CustomGotchicA1.className}>
+            商品紹介
+          </EmphasizedText>
         </VerticalText>
         <LineWithText.Component
           textPosition="right"
-          marginLeftSize="50px"
+          marginLeftSize="25px"
         >
-          <SmallText>line up</SmallText>
+          <SmallText className={Font.Font.CustomGotchicA1.className}>
+            line up
+          </SmallText>
         </LineWithText.Component>
       </WrapperRow>
 
       <WrapperColumn>
-        <EmphasizedTextMarginLeftUp>
+        <EmphasizedTextMarginLeftUp
+          className={Font.Font.CustomGotchicA1.className}
+        >
           地域のおいしさ、あなたのひとつまみ。
         </EmphasizedTextMarginLeftUp>
       </WrapperColumn>
