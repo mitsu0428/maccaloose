@@ -36,15 +36,6 @@ export const Component = () => {
           </LineWithText.Component>
         </WrapperColumn>
 
-        <WrapperColumn>
-          <EmphasizedText className={Font.Font.CustomShippori.className}>
-            四季の洗練された味わい、
-          </EmphasizedText>
-          <EmphasizedText className={Font.Font.CustomShippori.className}>
-            特別な時。
-          </EmphasizedText>
-        </WrapperColumn>
-
         <WrapperColumnPC>
           <Description className={Font.Font.CustomShippori.className}>
             シーズンごとに入れ替わる新鮮かつ繊細なフレーバー。
@@ -167,22 +158,8 @@ const EmphasizedTextRight = styled.p`
   }
 `;
 
-const EmphasizedText = styled.p`
-  width: 100%;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 0 50px;
-  padding: 0;
-  text-align: left;
-  letter-spacing: 0.5em;
-
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-
 const Description = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 0 50px;
   padding: 0;
   text-align: left;
@@ -191,7 +168,7 @@ const Description = styled.p`
 
   @media (max-width: 768px) {
     margin: 0 0 0 25px;
-    font-size: 12px;
+    font-size: 10px;
   }
 `;
 

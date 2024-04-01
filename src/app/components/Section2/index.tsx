@@ -128,7 +128,7 @@ const EmphasizedText = styled.p`
 `;
 
 const Description = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 0 50px;
   padding: 0;
   text-align: left;
@@ -137,7 +137,7 @@ const Description = styled.p`
 
   @media (max-width: 768px) {
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
   }
 `;
 

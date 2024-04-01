@@ -15,7 +15,10 @@ export const Component = () => {
 
       <Wrapper>
         <RightWrapper>
-          <p>店舗イラストが入る</p>
+          <StyledImage
+            src="/maccaloose-shop.png"
+            alt="店舗の画像"
+          />
         </RightWrapper>
 
         <LeftWrapper>
@@ -68,6 +71,7 @@ const RightWrapper = styled.div`
   justify-content: center;
   width: 50%;
   margin-top: 50px;
+  padding: 0 32px;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -76,6 +80,7 @@ const RightWrapper = styled.div`
 const LeftWrapper = styled.div`
   width: 50%;
   margin-top: 50px;
+  padding: 0 32px;
   @media (max-width: 768px) {
     width: 100%;
   }
