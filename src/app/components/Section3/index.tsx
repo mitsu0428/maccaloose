@@ -14,15 +14,30 @@ export const Component = () => {
           alt="四季のフレーバー"
         />
       </LeftWrapperPC>
+      <LeftWrapperSP>
+        <StyledImageSP
+          src="/maccaloose-web-24.jpg"
+          alt="四季のフレーバー"
+        />
+      </LeftWrapperSP>
 
       <RightWrapper>
         <WrapperColumn>
-          <EmphasizedTextRight className={Font.Font.CustomShippori.className}>
+          <EmphasizedTextRight className={Font.Font.CustomNotoSansJP.className}>
             心を豊かにする、
           </EmphasizedTextRight>
-          <EmphasizedTextRight className={Font.Font.CustomShippori.className}>
-            四季の洗練されたフレーバー。
-          </EmphasizedTextRight>
+
+          <RelativeWrapper>
+            <EmphasizedTextRight
+              className={Font.Font.CustomNotoSansJP.className}
+            >
+              四季の洗練されたフレーバー。
+            </EmphasizedTextRight>
+            <AbsoluteImageCommon
+              src="/maru.png"
+              alt="丸"
+            />
+          </RelativeWrapper>
         </WrapperColumn>
 
         <WrapperColumn>
@@ -30,38 +45,38 @@ export const Component = () => {
             textPosition="right"
             marginLeftSize="50px"
           >
-            <SmallText className={Font.Font.CustomShippori.className}>
+            <SmallText className={Font.Font.CustomNotoSansJP.className}>
               introduction
             </SmallText>
           </LineWithText.Component>
         </WrapperColumn>
 
         <WrapperColumnPC>
-          <Description className={Font.Font.CustomShippori.className}>
+          <Description className={Font.Font.CustomNotoSansJP.className}>
             シーズンごとに入れ替わる新鮮かつ繊細なフレーバー。
           </Description>
-          <Description className={Font.Font.CustomShippori.className}>
+          <Description className={Font.Font.CustomNotoSansJP.className}>
             常に新しい味を探し、旬の素材のおいしさを磨き上げ、
           </Description>
-          <Description className={Font.Font.CustomShippori.className}>
+          <Description className={Font.Font.CustomNotoSansJP.className}>
             あなたの手元で輝きます。
           </Description>
         </WrapperColumnPC>
 
         <WrapperColumnSP>
-          <Description className={Font.Font.CustomShippori.className}>
+          <Description className={Font.Font.CustomNotoSansJP.className}>
             シーズンごとに入れ替わる
           </Description>
-          <Description className={Font.Font.CustomShippori.className}>
+          <Description className={Font.Font.CustomNotoSansJP.className}>
             新鮮かつ繊細なフレーバー。
           </Description>
-          <Description className={Font.Font.CustomShippori.className}>
+          <Description className={Font.Font.CustomNotoSansJP.className}>
             常に新しい味を探し、
           </Description>
-          <Description className={Font.Font.CustomShippori.className}>
+          <Description className={Font.Font.CustomNotoSansJP.className}>
             旬の素材のおいしさを磨き上げ、
           </Description>
-          <Description className={Font.Font.CustomShippori.className}>
+          <Description className={Font.Font.CustomNotoSansJP.className}>
             あなたの手元で輝きます。
           </Description>
         </WrapperColumnSP>
@@ -87,13 +102,53 @@ const Container = styled.div`
 
 const StyledImage = styled.img`
   display: block;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const LeftWrapperPC = styled.div`
+  display: block;
   width: 50%;
 
   @media (max-width: 768px) {
     display: none;
+  }
+`;
+
+const StyledImageSP = styled.img`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+  }
+`;
+
+const LeftWrapperSP = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+const RelativeWrapper = styled.div`
+  position: relative;
+`;
+
+const AbsoluteImageCommon = styled.img`
+  position: absolute;
+  width: 45px;
+  bottom: 0;
+  left: 80px;
+
+  @media (max-width: 768px) {
+    width: 30px;
+    bottom: 0;
+    left: 10px;
   }
 `;
 
