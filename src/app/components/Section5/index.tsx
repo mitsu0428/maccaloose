@@ -7,10 +7,10 @@ import * as Font from "../../styles/NextFont";
 export const Component = () => {
   return (
     <Container id="menu">
-      <Text className={Font.Font.CustomNotoSansJP.className}>
+      <Text className={Font.Font.CustomShippori.className}>
         マカロンの贈り言葉は、”大切なあなたに”
       </Text>
-      <EmphasizedText className={Font.Font.CustomNotoSansJP.className}>
+      <EmphasizedText className={Font.Font.CustomShippori.className}>
         「特別なあなたへ、心からの思いを込めて」
       </EmphasizedText>
 
