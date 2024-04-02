@@ -8,7 +8,7 @@ export const Component = () => {
   return (
     <Container>
       <LineWithText.Component bottomLineLong={true}>
-        <SmallText className={Font.Font.CustomShippori.className}>
+        <SmallText className={Font.Font.CustomNotoSansJP.className}>
           shop
         </SmallText>
       </LineWithText.Component>
@@ -23,16 +23,16 @@ export const Component = () => {
 
         <LeftWrapper>
           <WrapperColumn>
-            <Text className={Font.Font.CustomShippori.className}>
+            <Text className={Font.Font.CustomNotoSansJP.className}>
               〒239-0844
             </Text>
-            <Text className={Font.Font.CustomShippori.className}>
+            <Text className={Font.Font.CustomNotoSansJP.className}>
               神奈川県横須賀市岩戸4丁目 大矢部ホームストアー5号室
             </Text>
           </WrapperColumn>
 
           <Vertical>
-            <VerticalText className={Font.Font.CustomShippori.className}>
+            <VerticalText className={Font.Font.CustomNotoSansJP.className}>
               店舗紹介
             </VerticalText>
           </Vertical>

@@ -14,7 +14,7 @@ export const Component = () => {
 
       <WrapperRow>
         <VerticalText>
-          <EmphasizedText className={Font.Font.CustomShippori.className}>
+          <EmphasizedText className={Font.Font.CustomNotoSansJP.className}>
             商品紹介
           </EmphasizedText>
         </VerticalText>
@@ -22,21 +22,21 @@ export const Component = () => {
           textPosition="right"
           marginLeftSize="25px"
         >
-          <SmallText className={Font.Font.CustomShippori.className}>
+          <SmallText className={Font.Font.CustomNotoSansJP.className}>
             line up
           </SmallText>
         </LineWithText.Component>
       </WrapperRow>
 
       <WrapperColumn>
-        <EmphasizedTextLeftTop className={Font.Font.CustomShippori.className}>
+        <EmphasizedTextLeftTop className={Font.Font.CustomNotoSansJP.className}>
           地域のおいしさ、あなたのひとつまみ。
         </EmphasizedTextLeftTop>
       </WrapperColumn>
 
       <WrapperColumn>
         <EmphasizedTextRightBottom
-          className={Font.Font.CustomShippori.className}
+          className={Font.Font.CustomNotoSansJP.className}
         >
           指先に届く自然の息吹。
         </EmphasizedTextRightBottom>

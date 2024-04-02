@@ -17,35 +17,35 @@ export const Component = () => {
         </ImageWrapper>
 
         <Vertical>
-          <VerticalText className={Font.Font.CustomShippori.className}>
+          <VerticalText className={Font.Font.CustomNotoSansJP.className}>
             ほどよい甘さが口溶ける
           </VerticalText>
-          <VerticalText className={Font.Font.CustomShippori.className}>
+          <VerticalText className={Font.Font.CustomNotoSansJP.className}>
             恵みのスイートモーメント
           </VerticalText>
         </Vertical>
       </WrapperRowWithMarginRight>
 
       <WrapperColumnWithMarginTop>
-        <EmphasizedText className={Font.Font.CustomShippori.className}>
+        <EmphasizedText className={Font.Font.CustomNotoSansJP.className}>
           こだわったのは
         </EmphasizedText>
-        <EmphasizedText className={Font.Font.CustomShippori.className}>
+        <EmphasizedText className={Font.Font.CustomNotoSansJP.className}>
           甘さを抑えた、自然な風味
         </EmphasizedText>
       </WrapperColumnWithMarginTop>
 
       <WrapperColumnWithMarginTop>
-        <Description className={Font.Font.CustomShippori.className}>
+        <Description className={Font.Font.CustomNotoSansJP.className}>
           マカルースは砂糖の使用量を
         </Description>
-        <Description className={Font.Font.CustomShippori.className}>
+        <Description className={Font.Font.CustomNotoSansJP.className}>
           従来の3分の1に抑え、
         </Description>
-        <Description className={Font.Font.CustomShippori.className}>
+        <Description className={Font.Font.CustomNotoSansJP.className}>
           野菜の甘味を生かした
         </Description>
-        <Description className={Font.Font.CustomShippori.className}>
+        <Description className={Font.Font.CustomNotoSansJP.className}>
           優しい味わいのマカロンです。
         </Description>
       </WrapperColumnWithMarginTop>
