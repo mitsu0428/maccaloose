@@ -22,12 +22,6 @@ export const Component = () => {
         </RightWrapper>
 
         <LeftWrapper>
-          <Vertical>
-            <VerticalText className={Font.Font.CustomShippori.className}>
-              店舗紹介
-            </VerticalText>
-          </Vertical>
-
           <WrapperColumn>
             <Text className={Font.Font.CustomShippori.className}>
               〒239-0844
@@ -36,6 +30,12 @@ export const Component = () => {
               神奈川県横須賀市岩戸4丁目 大矢部ホームストアー5号室
             </Text>
           </WrapperColumn>
+
+          <Vertical>
+            <VerticalText className={Font.Font.CustomShippori.className}>
+              店舗紹介
+            </VerticalText>
+          </Vertical>
         </LeftWrapper>
       </Wrapper>
     </Container>
@@ -69,7 +69,7 @@ const RightWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   margin-top: 50px;
   padding: 0 32px;
   @media (max-width: 768px) {
@@ -78,7 +78,10 @@ const RightWrapper = styled.div`
 `;
 
 const LeftWrapper = styled.div`
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
   margin-top: 50px;
   padding: 0 32px;
   @media (max-width: 768px) {
@@ -90,6 +93,10 @@ const WrapperColumn = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  padding-left: 16px;
+  bottom: 0;
+  left: 0;
 `;
 
 const Text = styled.p`
@@ -97,6 +104,7 @@ const Text = styled.p`
   font-weight: bold;
   margin: 0;
   padding: 0;
+  width: 50%;
 
   @media (max-width: 768px) {
     font-size: 12px;
