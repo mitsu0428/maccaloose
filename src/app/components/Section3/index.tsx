@@ -100,6 +100,7 @@ const Container = styled.div`
 
 const StyledImage = styled.img`
   display: block;
+  border-radius: 4px;
 
   @media (max-width: 768px) {
     display: none;
