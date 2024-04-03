@@ -15,8 +15,12 @@ export const Component = () => {
       </EmphasizedText>
 
       <ImageWrapper>
-        <StyledImage
+        <StyledImageSP
           src="/maccaloose-menu.jpg"
+          alt="maccalooseメニュー画像"
+        />
+        <StyledImagePC
+          src="/maccaloose-menu-pc.jpg"
           alt="maccalooseメニュー画像"
         />
       </ImageWrapper>
@@ -51,9 +55,22 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const StyledImage = styled.img`
+const StyledImageSP = styled.img`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    width: 500px;
+  }
+`;
+
+const StyledImagePC = styled.img`
   display: block;
-  width: 500px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const EmphasizedText = styled.p`
