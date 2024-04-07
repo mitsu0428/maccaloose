@@ -27,7 +27,7 @@ export const Component = () => {
               〒239-0844
             </Text>
             <Text className={Font.Font.CustomShippori.className}>
-              神奈川県横須賀市岩戸4丁目 大矢部ホームストアー5号室
+              神奈川県横須賀市岩戸４丁目２３ 大矢部ホームストア 5号室
             </Text>
           </WrapperColumn>
 
