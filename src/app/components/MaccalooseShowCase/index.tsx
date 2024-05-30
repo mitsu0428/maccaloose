@@ -55,7 +55,7 @@ const ImageWrapper = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    padding: ;
+    padding: 40px;
   }
 `;
 
@@ -63,6 +63,7 @@ const Image = styled.img`
   width: 450px;
 
   @media (max-width: 768px) {
+    width: 100%;
     &:nth-child(1),
     &:nth-child(3) {
       display: none;
