@@ -10,7 +10,7 @@ export const Component = () => {
       alt: "トップ画像",
     },
     {
-      src: "/maccaloose.gif",
+      src: "/Maccaloose.gif",
       alt: "トップ画像",
     },
     {
