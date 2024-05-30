@@ -47,8 +47,8 @@ export const Component = () => {
 
 const Container = styled.div`
   position: relative;
-  height: 100%;
   margin-top: 50px;
+
   @media (max-width: 768px) {
     margin-top: 25px;
   }
