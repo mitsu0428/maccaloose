@@ -10,7 +10,7 @@ export const Component = () => {
       alt: "トップ画像",
     },
     {
-      src: "/slide2.jpg",
+      src: "/maccaloose.gif",
       alt: "トップ画像",
     },
     {
@@ -21,44 +21,51 @@ export const Component = () => {
 
   return (
     <Container>
-      <Slider>
+      <ImageWrapper>
         {images.map((image, index) => (
-          <Slide key={index}>
-            <Image
-              src={image.src}
-              alt={image.alt}
-            />
-          </Slide>
+          <Image
+            key={index}
+            src={image.src}
+            alt={image.alt}
+          />
         ))}
-      </Slider>
+      </ImageWrapper>
     </Container>
   );
 };
 
 const Container = styled.div`
   position: relative;
-  display: flex;
-  align-items: center;
   width: 100%;
-  height: 250px;
-  margin-top: 50px;
 
   @media (max-width: 768px) {
-    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
-const Slider = styled.div`
+const ImageWrapper = styled.div`
+  position: relative;
+  width: 100%;
   display: flex;
-  gap: 16px;
-  background-color: #fff;
-  padding: 84px 0;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 20px;
 
   @media (max-width: 768px) {
-    padding: 42px 0;
+    padding: ;
   }
 `;
 
-const Slide = styled.div``;
+const Image = styled.img`
+  width: 450px;
 
-const Image = styled.img``;
+  @media (max-width: 768px) {
+    &:nth-child(1),
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+`;
