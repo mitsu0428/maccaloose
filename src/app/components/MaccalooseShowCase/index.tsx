@@ -8,14 +8,17 @@ export const Component = () => {
     {
       src: "/slide1.jpg",
       alt: "トップ画像",
+      url: "",
     },
     {
       src: "/Maccaloose.gif",
       alt: "トップ画像",
+      url: "https://maccaloose-net.shop-pro.jp/",
     },
     {
       src: "/slide3.jpg",
       alt: "トップ画像",
+      url: "",
     },
   ];
 
@@ -23,11 +26,17 @@ export const Component = () => {
     <Container>
       <ImageWrapper>
         {images.map((image, index) => (
-          <Image
+          <a
             key={index}
-            src={image.src}
-            alt={image.alt}
-          />
+            href={image.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+            />
+          </a>
         ))}
       </ImageWrapper>
     </Container>
