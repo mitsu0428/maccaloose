@@ -8,7 +8,7 @@ export const Component = () => {
     {
       src: "/slide1.jpg",
       alt: "トップ画像",
-      url: "",
+      url: "https://www.maccaloose.com",
     },
     {
       src: "/Maccaloose.gif",
@@ -18,7 +18,7 @@ export const Component = () => {
     {
       src: "/slide3.jpg",
       alt: "トップ画像",
-      url: "",
+      url: "https://www.maccaloose.com",
     },
   ];
 
