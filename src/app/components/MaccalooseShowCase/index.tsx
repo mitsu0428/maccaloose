@@ -26,7 +26,7 @@ export const Component = () => {
     <Container>
       <ImageWrapper>
         {images.map((image, index) => (
-          <a
+          <Url
             key={index}
             href={image.url}
             target="_blank"
@@ -36,7 +36,7 @@ export const Component = () => {
               src={image.src}
               alt={image.alt}
             />
-          </a>
+          </Url>
         ))}
       </ImageWrapper>
     </Container>
@@ -73,6 +73,11 @@ const Image = styled.img`
 
   @media (max-width: 768px) {
     width: 100%;
+  }
+`;
+
+const Url = styled.a`
+  @media (max-width: 768px) {
     &:nth-child(1),
     &:nth-child(3) {
       display: none;
